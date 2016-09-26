@@ -1,0 +1,32 @@
+nav .show{
+    display:none;
+}
+nav .btn a{
+    display:block;
+    float:left;
+    width: 56px;
+    height: 43px;
+    background:url("img/2.png") no-repeat;
+}
+.hide{
+    position: absolute;
+    left:20px;
+    line-height:32px;
+    display:none;
+
+}
+.hide li a{
+    color:#edb8b8;
+    font-size:16px;
+}
+.hide li a:hover{
+    color:#fff;
+}
+nav .btn a:active .hide{
+    display:block;
+}
+section dl{
+    float:left;
+    width:100%;
+    margin-bottom:30px;
+}

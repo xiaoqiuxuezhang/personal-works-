@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="base.css" rel="stylesheet"/>
+    <link href="1.css" rel="stylesheet" media="screen and (max-width:800px)"/>
+    <link href="2.css" rel="stylesheet" media="screen and (min-width:801px)"/>
+    <style>
+        html{
+            overflow-x:hidden;
+        }
+        nav{
+            width:100%;
+            height:50px;
+            background:#cf4646;
+            line-height: 50px;
+            position: fixed;
+            display: block;
+            overflow: hidden;
+            top:0;
+            left:0;
+            z-index:999;
+        }
+        .nav{
+            width:100%;
+            height:50px;
+        }
+
+        nav a{
+            float:left;
+            color:#edb8b8;
+            font-size:20px;
+            margin-left:30px;
+        }
+        nav .show {
+            float: right;
+            margin-right:30px;
+        }
+        nav .show li{
+            float: left;
+        }
+        nav  li a{
+            font-size:16px;
+        }
+        nav a:hover{
+            color:#fff;
+        }
+        header{
+            width: 100%;
+            height:360px;
+            background:#cf4646;
+            text-align: center;
+            color:#fff;
+            position: relative;
+        }
+        header p{
+            font-size:24px;
+            margin-top:20px;
+        }
+        header img{
+            margin-top:20px;
+        }
+        header .bd{
+            position: absolute;
+            left:50%;
+            margin-left:-40px;
+            padding:10px 10px;
+            width: 70px;
+            height: 20px;
+            border:2px solid #edb8b8;
+            color:#edb8b8;
+            display: block;
+            margin-top:50px;
+            font-weight: bold;
+        }
+        header .bd:hover{
+            border:2px solid #fff;
+            color:#fff;
+        }
+        section{
+            width: 100%;
+            margin-top:150px;
+            margin-left:20px;
+        }
+        section dt{
+            font-size:32px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+        footer{
+            height:300px;
+            color:#c1c1c1;
+            text-align: center;
+            line-height:32px;
+            font-size:14px;
+        }
+    </style>
+    <script>
+        window.onload=window.onresize=function(){
+            var oBtn=document.getElementById('btn');
+            var oHide=document.getElementById('hide');
+            oBtn.onclick=function(){
+                if(oHide.style.display=='block'){
+                    oHide.style.display='none';
+                }else{
+                    oHide.style.display='block';
+                }
+            };
+            window.onresize=function()
+            {
+                if(document.documentElement.clientWidth>801){
+                    oHide.style.display='none';
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div>
+    <nav>
+        <a href="javascript:;">Gulp中文网</a>
+        <ul class="show">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">中文文档</a></li>
+            <li><a href="javascript:;">入门指南</a></li>
+            <li><a href="javascript:;">API</a></li>
+            <li><a href="javascript:;">插件开发</a></li>
+            <li><a href="javascript:;">常见问题</a></li>
+            <li><a href="javascript:;">使用技巧</a></li>
+        </ul>
+        <div class="btn" id="btn"><a href="javascript:;"></a></div>
+    </nav>
+    <div class="nav"></div>
+    <header>
+        <ul class="hide" id="hide">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">中文文档</a></li>
+            <li><a href="javascript:;">入门指南</a></li>
+            <li><a href="javascript:;">API</a></li>
+            <li><a href="javascript:;">插件开发</a></li>
+            <li><a href="javascript:;">常见问题</a></li>
+            <li><a href="javascript:;">使用技巧</a></li>
+        </ul>
+        <img src="img/1.png"/>
+        <p>用自动化构建工具增强你的工作流程！</p>
+        <a href="javascript:;" class="bd">开始使用</a>
+    </header>
+
+    <section>
+       <dl>
+           <dt>易于使用</dt>
+           <dd>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</dd>
+       </dl>
+        <dl>
+            <dt>构建快速</dt>
+            <dd>利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</dd>
+        </dl>
+        <dl>
+            <dt>插件高质</dt>
+            <dd>Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作。</dd>
+        </dl>
+        <dl>
+            <dt>易于学习</dt>
+            <dd>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</dd>
+        </dl>
+    </section>
+    <footer>
+        <p>© Gulp 中文网 2015</p>
+        <p>京ICP备11008151号 | 京公网安备11010802014853</p>
+    </footer>
+</div>
+</body>
+</html>

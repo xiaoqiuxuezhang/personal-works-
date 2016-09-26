@@ -1,0 +1,125 @@
+
+*{ margin:0; padding:0;}
+/*顶部导航*/
+.w{width:1349px; margin:0 auto;}
+.top-nav{ height:40px; background: url(../img/weibo1.jpg) no-repeat 77px center #2b2b2b; border-top:5px solid #00925f; }
+.top-nav .lic{ color:#00925f;}
+.top-nav li{  height:40px;line-height:40px;}
+.top-nav li a{ border-right:1px solid #b2b2b2; color:#b2b2b2; font-size:13px;
+padding-right:15px; padding-left:15px;}
+.top-list .lic{ margin-left:146px;}
+.top-list li .lis {   background:url(../img/gouwuche.jpg) no-repeat 15px; display:block;
+padding-left:41px; padding-right:43px; margin-right:77px; height:18px; line-height:18px; margin-top:11px;}
+/*主题顶部导航*/
+.the-nav{ height:84px; line-height:84px; text-align:center; background:url(../img/oppo.jpg) no-repeat 76px;}
+.the-nav a{display:block; color:#2b2b2b; height:34px; padding-left:41px; font-size:12px; font-weight:bold;}
+.the-nav .al{ margin-right:96px;}
+/*主题身体*/
+.the-body{ height:618px;}
+.the-body .the-body-1{ width:100%; height:618px; position:relative;}
+.the-body .the-body-img{ width:100%; height:618px; position:absolute; top:0;left:0;}
+.the-body .the-body-img1{ position:absolute; top:-5px; left:81px;; width:1180px;}
+.the-body .the-body-img2{ height:68px; width:100%; position:absolute; left:-2px; bottom:0; }
+
+.the-body1{ height:800px; text-align:center; background:#f2f2f2; margin-top:-52px;}
+.the-body1 h3{ width:100%;  font-size:27px; font-weight:bold; line-height:52px; padding-top:100px; margin-bottom:26px;}
+.the-body1 h3 span{ font-size:27px; border-bottom:1px solid #ccc; border-top:1px solid #ccc; display:inline-block; width:95px;}
+.the-body1 p{ font-size:11px; height:50px; margin-bottom:39px; height:11px;}
+.the-body1 p a{ color:#6fb595;}
+.the-body1-1 ul{ width:100%; height:126px; line-height:126px; margin-left:84px;}
+.the-body1 .the-body1-1 ul li{ width:282px; height:126px;  margin-top:-98px; margin-right:22px;}
+.the-body1 .the-body1-1 ul li h3{ font-size:17px; height:17px;}
+.the-body1 .the-body1-1 ul li p{ font-szie:12px; height:12px; line-height:15px;}
+.the-body1 .the-body1-1 ul li a{ font-size:}
+/*精选配件*/
+.box{ height:1072px; background:#f6f6f6; width:100%;}
+.box h3{ height:140px; line-height:140px; font-size:27px; text-align:center;}
+.box h3 span{display:inline-block; font-size:27px; height:48px;line-height:48px; border-bottom:1px solid #ccc;
+border-top:1px solid #ccc;line-height:33px; }
+.p1{ font-size:14px;}
+.p2{ font-size:21px; font-weight:bold; line-height:33px;}
+.p3 a{ color:#009860;}
+.pl{ line-height:33px;}
+.box .back{ background:#fff; border-bottom:5px solid #eaeaea;}
+.box1{ width:280px; height:574px; position:relative; top:0; left:-448px; text-align:center;}
+.box2{ width:268px; height:270px; position:absolute; top:0; left:297px;}
+.box2 p{ height:60px; width:210px; line-height:59px; border-bottom:1px solid #ccc; margin-left:26px;}
+.box2 .po{ background:url(../img/images/dayu.jpg) no-repeat 130px center; width:210px; height:62px; line-height:62px; text-align:center;}
+.box2 ul {width:200px; height:122px; margin: 0 auto; border-bottom:1px solid #ccc; padding-top:28px; padding-left:10px;}
+.box2 li {width:48px;padding-left:21px; height:18px; line-height:18px; margin-bottom:18px; margin-right:35px;
+ position:relative; text-align:left;}
+.box2 .po a{ color:#7db796;}
+.box2 ul li a{  color:#ccc;}
+.box2 .back2,.box2 .back4,.box2 .back6{margin-right:0;}
+.box2 li i {position:absolute; left:0; top:0; width:16px; height:16px;}
+.box2 li .i1{background:url(../img/images/xiaotubiao_03.jpg) no-repeat left center;}
+.box2 li .i2{background:url(../img/images/xiaotubiao_05.jpg) no-repeat left center;}
+.box2 li .i3{background:url(../img/images/xiaotubiao_09.jpg) no-repeat left center;}
+.box2 li .i4{background:url(../img/images/xiaotubiao_10.jpg) no-repeat left center;}
+.box2 li .i5{background:url(../img/images/xiaotubiao_13.jpg) no-repeat left center;}
+.box2 li .i6{background:url(../img/images/xiaotubiao_14.jpg) no-repeat left center;}
+.box3{ width:576px; height:276px; position:absolute; top:0; left:593px;}
+.box3 .box3-1{ margin:126px 0 0 28PX;}
+.box4{ width:280px; height:270px; position:absolute; top:298px; left:296px;}
+.box5{ width:278px; height:574px; position:absolute; top:298px; left:593px;}
+.box6{ width:280px; height:270px; position:absolute; top:298px; left:888px;}
+.box7{ width:280px; height:270px; position:absolute; top:602px; left:888px;}
+.box8{ width:579px; height:271px; position:absolute; top:602px; left:0;}
+.box8 .box8-1{ margin:105px 16px 0 0;}
+/*身体结尾*/
+.body-end{ height:750px;  background:#eaeaea; margin-top:298px;}
+.body-end h3{  height:140px; line-height:140px; font-size:27px; text-align:center;}
+.body-end h3 span{display:inline-block; font-size:27px; height:48px;line-height:48px; border-bottom:1px solid #ccc;}
+.body-end .body-end-1{ width:1180px; height:564px; }
+.body-end-2{ width:780px; height:558px; margin-right:16px;}
+.body-end-3{ width:382px; height:564px;  }
+.body-end-2 .body-end-img{ margin-right:19px; margin-bottom:24px;}
+.body-end-2 .body-end-img1{margin-right:19px;}
+.body-end-2 img{ border-bottom:5px solid #ccc;}
+.body-end-3-1{ width:190px; height:50px; background:#fff; border-top:1px solid #00925f;
+line-height:50px; text-align:center; color:#000; font-size:20px; position:relative; top:0; left:0;}
+.body-end-3 p{  color:#ccc; font-size:20px; width:190px; height:50px; line-height:50px; text-align:center;}
+.body-end-3-1 ul{ width:380px; height:513px; background:#fff; position:absolute; top:50px; left:0;}
+.body-end-3-1 ul li{ width:318px; height:91px; background:#ccc; margin:0 28px 15px; }
+.body-end-3-1 ul li p{ margin-top:15px;}
+.body-end-3-1 ul .li1{ margin-top:45px;}
+.body-end-3-1 ul .li1 p{ width:215px; height:90px; color:#838383; font-size:11px; line-height:22px;}
+.body-end-3-1 ul .li2{ margin-top:15px;}
+.body-end-3-1 ul .li2 p{ width:215px; height:90px; color:#838383; font-size:11px; line-height:22px;}
+.body-end-3-1 ul .li3{ margin-top:15px;}
+.body-end-3-1 ul .li3 p{ width:215px; height:90px; color:#838383; font-size:11px; line-height:22px;}
+.body-end-3-1 ul .li4{ margin-top:15px;}
+.body-end-3-1 ul .li4 p{ width:215px; height:90px; color:#838383; font-size:11px; line-height:22px;}
+.body-end-3-2{ background:#dadada;}
+/*结尾声明*/
+.fin{ height:124px; border-bottom:1px solid #ccc; margin-top:46px;}
+.fin  li{ width:220px; height:124px; margin-right:15px; text-align:center;}
+.fin .ser{ margin-left:85px; background:url(../img/images/fin_03.jpg) no-repeat 0 center;}
+.fin  li h4{ margin-top:42px; font-size:17px; font-weight:bold; margin-bottom:6px;}
+.fin .ser1{ background:url(../img/images/fin_05.jpg) no-repeat 0 center;}
+.fin .ser2{ background:url(../img/images/fin_07.jpg) no-repeat 0 center;}
+.fin .ser3{ background:url(../img/images/fin_09.jpg) no-repeat 0 center;}
+.fin .ser4{ background:url(../img/images/fin_11.jpg) no-repeat 0 center;}
+/*页尾*/
+.foot{ height:240px;}
+.foot ul{ margin-right:78px; margin-top:30px; text-align:left;}
+.foot ul li{ padding-left:8px; line-height:33px;}
+.foot .bl{background:url(../img/images/fangkuan.jpg) no-repeat 0 15px;}
+.foot ul li a{color:#a9a9a9; width:100px; font-size:12px; display:block; text-align:center; text-align:left;}
+.foot .foot-1{ width:100px; margin-left:90px;}
+.foot .wer{ font-weight:bold; padding-left:0;}
+.foot .foot-5 .weibo1{background:url(../img/images/finall_03.jpg) no-repeat 0 6px;}
+.foot .foot-5 .weibo2{background:url(../img/images/finall_09.jpg) no-repeat 0 6px;}
+.foot .foot-5 .weibo3{background:url(../img/images/finall_11.jpg) no-repeat 0 6px;}
+.foot .foot-5 .weibo4{background:url(../img/images/finall_14.jpg) no-repeat 0 6px;}
+.foot .foot-5 li a{ margin-left:18px;}
+.foot .foot-6 li{ width:230px; height:60px;}
+.foot .foot-6 li h2{ font-size:21px; color:#409f73; padding-left:50px;}
+.foot .foot-6 li p{ font-size:11px; text-align:left; width:134px; margin-left:50px}
+.foot .foot-6 .hlf{background:url(../img/images/finall_06.jpg) no-repeat;}
+.foot .foot-6 .hle{ background:url(../img/images/finall_15.jpg) no-repeat;}
+
+.footer{ height:70px; background:#2b2b2b; line-height:70px; border-top:5px solid #000;}
+.footer li{ color:#fff; font-size:13px; margin-right:40px;}
+.footer .pl{ background:url(../img/images/oppo.jpg) no-repeat 50px 22px; width:810px; height:70px; line-height:70px; text-align:center;}
+

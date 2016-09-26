@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0;}
+        #box{
+            width: 1600px;
+            height:900px;
+            margin: 200px auto;
+            position: relative;
+            background: url("1.jpg") no-repeat ;
+            background-size:100% 100%;
+
+        }
+        .page1{
+            width: 50%;
+            height:100%;
+            background-size:100% 100%;
+            position: absolute;
+            right:0;
+            top: 0;
+            -webkit-transform-style:preserve-3d ;
+            /*-webkit-transition: 1s linear all;*/
+            -webkit-transform: perspective(2600px) rotateY(0deg);
+            perspecitve:800px;
+            -webkit-transform-origin:left;
+            z-index: 2;
+
+        }
+        .page1 span{
+            width: 100%;
+            height:100%;
+            position: absolute;
+            right:0;
+            top: 0;
+        }
+        .page1 .front{
+            background:url("1.jpg") no-repeat right;
+            -webkit-transform: translateZ(1px);
+            /*-webkit-transform: scale(-1,1);*/
+        }
+        .page1 .right{
+            background:url("2.jpg") no-repeat ;
+            -webkit-transform: translateZ(-1px)  scale(-1,1);
+        }
+        /*#box:active .page1{*/
+            /*-webkit-transform: perspective(26000px) rotateY(-180deg);*/
+        /*}*/
+        .page2{
+            width:50%;
+            height:100%;
+            position:absolute;
+            top:0; right:0;
+            background: url("2.jpg") right;
+            z-index: 1;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            debugger;
+            var oBox=document.querySelector('#box');
+            var oPage1=document.querySelector('.page1');
+            var oPage2=document.querySelector('.page2');
+            var oRight=document.querySelector('.right');
+            var oFront=document.querySelector('.front');
+            var bOk=false;
+            var iNow=0;
+            oBox.onclick=function(){
+                if(bOk)return;
+                bOk = true;
+                //给page加运动并且Y轴逆时针旋转180deg
+
+                oPage1.style.WebkitTransition = '1s all ease';
+                oPage1.style.WebkitTransform = 'perspective(2600px) rotateY(-180deg)';
+
+                //翻页完毕时，以最快的速度再翻回去。
+                function tranEnd(){
+                    oPage1.removeEventListener('transitionend',tranEnd,false);
+
+                    iNow++;
+
+                    //需要把page的运动干掉
+                    oPage1.style.WebkitTransition = 'none';
+
+                    oPage1.style.WebkitTransform = 'perspective(2600px) rotateY(0deg)';
+
+                    oBox.style.backgroundImage = 'url('+(iNow%6+1)+'.jpg)';
+                    oFront.style.backgroundImage = 'url('+(iNow%6+1)+'.jpg)';
+                    oRight.style.backgroundImage = 'url('+((iNow+1)%6+1)+'.jpg)';
+                    oPage2.style.backgroundImage = 'url('+((iNow+1)%6+1)+'.jpg)';
+                    bOk = false;
+                }
+                oPage1.addEventListener('transitionend',tranEnd,false);
+            };
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+    <div class="page1">
+        <span class="front"></span>
+        <span class="right"></span>
+    </div>
+    <div class="page2"></div>
+</div>
+</body>
+</html>

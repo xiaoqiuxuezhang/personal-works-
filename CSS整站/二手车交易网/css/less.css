@@ -1,0 +1,254 @@
+.nav {
+  width: 100%;
+  height: 50px;
+  background: #f2f2f2;
+}
+.nav .logo {
+  background: url(../273%E4%BA%8C%E6%89%8B%E8%BD%A6%E7%BD%91/img/logo.__1394092426__.png) no-repeat;
+  width: 300px;
+  height: 50px;
+}
+.nav .logo a {
+  display: block;
+  width: 300px;
+  height: 50px;
+  text-indent: -999em;
+}
+.nav a {
+  width: 80px;
+  height: 50px;
+  background: url(../images/didian_03.jpg) no-repeat 12px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  line-height: 50px;
+}
+.banner {
+  width: 320px;
+  height: 45px;
+  background: url(../images/biaoti.jpg) no-repeat;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+.banner .search {
+  padding-left: 46px;
+  width: 250px;
+  height: 38px;
+  background: url(../images/search.png) no-repeat #ffffff 15px center;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.banner .search input {
+  width: 250px;
+  height: 38px;
+  border: 0;
+}
+.con {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-size: 100%;
+  margin: 10px auto 0;
+}
+.nav1 {
+  width: 320px;
+  height: 100px;
+  margin: 0 auto;
+}
+.nav1 li {
+  width: 80px;
+  height: 70px;
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #f2f2f2;
+  box-sizing: border-box;
+}
+.nav1 li .con1 {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-size: 100%;
+  margin: 10px auto 0;
+  background: url(../images/ico1.png) no-repeat;
+}
+.nav1 li .con2 {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-size: 100%;
+  margin: 10px auto 0;
+  background: url(../images/ico2.png) no-repeat;
+}
+.nav1 li .con3 {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-size: 100%;
+  margin: 10px auto 0;
+  background: url(../images/ico3.png) no-repeat;
+}
+.nav1 li .con4 {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-size: 100%;
+  margin: 10px auto 0;
+  background: url(../images/ico4.png) no-repeat;
+}
+.nav1 li p {
+  margin-top: 5px;
+}
+.nav1 li .last {
+  border-right: none;
+}
+.h {
+  width: 160px;
+  height: 115px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.body {
+  margin: 0 auto;
+  width: 320px;
+  height: 115px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+}
+.body .body1 {
+  width: 160px;
+  height: 115px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.body .body2 {
+  width: 160px;
+  height: 115px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.w {
+  width: 320px;
+}
+.h2 {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-left: 15px;
+  width: 305px;
+  height: 42px;
+  border-bottom: 1px solid #ccc;
+}
+.price {
+  width: 320px;
+  height: 128px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.price h2 {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-left: 15px;
+  width: 305px;
+  height: 42px;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/images/fangkuai_06.jpg) no-repeat 0 center;
+}
+.price i {
+  width: 320px;
+  height: 86px;
+  display: block;
+}
+.price i a {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 79px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.brand {
+  width: 320px;
+  height: 198px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.brand h2 {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-left: 15px;
+  width: 305px;
+  height: 42px;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/images/fangkuai_03.jpg) no-repeat 0 center;
+}
+.car {
+  width: 320px;
+  height: 128px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.car h2 {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-left: 15px;
+  width: 305px;
+  height: 42px;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/images/fangkuai_08.jpg) no-repeat 0 center;
+}
+.car i {
+  width: 320px;
+  height: 86px;
+  display: block;
+}
+.car i a {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 79px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.last {
+  margin: 10px auto 0;
+  width: 320px;
+  height: 138px;
+}
+.fin {
+  margin: 0 auto;
+  width: 320px;
+  height: 80px;
+}
+.fin h3 {
+  height: 15px;
+  text-align: center;
+  margin-top: 18px;
+}
+.fin h3 .al {
+  border-right: none;
+}
+.fin h3 a {
+  padding: 0 10px 0 10px;
+  border-right: 1px solid #ccc;
+  font-size: 15px;
+  font-weight: bold;
+}
+.fin p {
+  margin-top: 17px;
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+}
+.fin p a {
+  color: #ff9e06;
+  font-size: 12px;
+}

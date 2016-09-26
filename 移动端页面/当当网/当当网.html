@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title></title>
+    <link href="css/base.css" rel="stylesheet"/>
+    <style>
+        html{
+            background:#f0f0f0;
+            font-size:20px;
+        }
+        .wrap{
+            width: 16rem;
+        }
+        header{
+            width: 100%;
+            height:2.15rem;
+            background:url("img/1.png") no-repeat;
+            background-size: 16rem;
+        }
+        section .banner{
+            width: 100%;
+            height: 6.275rem;
+            background:url("img/2.png") no-repeat;
+            background-size: 16rem;
+        }
+        .xz{
+            width: 15.2rem;
+            height: 1.475rem;
+            padding:0.5rem 0.4rem;
+        }
+        .xz img{
+            width: 100%;
+            height: 100%;
+        }
+        .txt{
+            margin:0 0.5rem;
+            width: 14.9rem;
+            height: 1.9rem;
+            background:#fe9600 ;
+            border:0.05rem solid #fe9600;
+        }
+        .txt input{
+            float:left;
+            border:none;
+            width: 11.9rem;
+            height:1.9rem;
+        }
+        .txt a{
+            float:right;
+            background: url("img/4.png") no-repeat   center center;
+            width: 2.95rem;
+            height:1.9rem;
+            background-size:1.2rem;
+        }
+        .list{
+            font-size:0.7rem;
+            margin: 0.5rem 0 1rem 0;
+            padding-left:2.3rem;
+            width: 11rem;
+            height:4rem;
+            color:#7d7d7d;
+        }
+        .list li{
+            height:1.75rem;
+            line-height:1.75rem;
+            width: 20%;
+            float:left;
+
+        }
+        .sp{
+            width: 100%;
+            height:5.35rem;
+        }
+        .sp li{
+            width: 25%;
+            padding-top:3.3rem;
+            height:0.55rem;
+            float: left;
+            text-align:center;
+            font-size:0.55rem;
+            color:#6b6b6b;
+        }
+        .sp li:nth-child(1){
+            background:url("img/18.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .sp li:nth-child(2){
+            background:url("img/19.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .sp li:nth-child(3){
+            background:url("img/7.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .sp li:nth-child(4){
+            background:url("img/8.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .jr{
+            width: 100%;
+            height:1.55rem;
+            background:#fe9600;
+            margin-bottom:0.5rem;
+            color:#fff;
+            line-height:1.55rem;
+            padding-left:0.55rem;
+        }
+        .jr p{
+            font-size:0.75rem;
+            float:left;
+            padding-left:0.55rem;
+        }
+        .jr span{
+            font-size:0.6rem;
+            float:left;
+            padding-left:0.55rem;
+        }
+        .jr a{
+            float:right;
+            width: 1.55rem;
+            height: 1.55rem;
+            background:url("img/5.png") no-repeat left center;
+            background-size: 0.275rem;
+        }
+        .myl{
+            width: 15rem;
+            margin: 0 0.5rem;
+            height:11.75rem;
+            margin-bottom:0.5rem;
+        }
+        .myl div{
+            width: 100%;
+            height: 7.8rem;
+            border-bottom:0.05rem solid #e5e5e5;
+        }
+        .myl div img{
+            width: 7.25rem;
+            height: 7.3rem;
+            float: left;
+        }
+        .myl div img:nth-child(1){
+            margin-right:0.5rem;
+        }
+        .myl p{
+            height: 1.85rem;
+            line-height:1.85rem;
+            font-size:0.7rem;
+            color:#727272;
+            padding-left:0.55rem;
+            border-top:0.05rem solid #fff;
+        }
+        .myl p:last-child{
+            border-bottom:0.05rem solid #fff;
+        }
+        .myl p span{
+            color:#c00000;
+            font-size:0.6rem;
+            margin-right:0.55rem;
+            float:right;
+        }
+        .wp{
+            width: 100%;
+            height:1.55rem;
+            background:#e50055;
+            color:#fff;
+            line-height:1.55rem;
+            padding-left:0.55rem;
+        }
+        .wp p{
+            font-size:0.75rem;
+            float:left;
+            padding-left:0.55rem;
+        }
+        .wp span{
+            font-size:0.6rem;
+            float:left;
+            padding-left:0.55rem;
+        }
+        .wp a{
+            float:right;
+            width: 1.55rem;
+            height: 1.55rem;
+            background:url("img/5.png") no-repeat left center;
+            background-size: 0.275rem;
+        }
+        .pic{
+            width: 100%;
+            height: 21rem;
+            margin-bottom:0.5rem;
+        }
+        .pic img{
+            width: 100%;
+            height: 7rem;
+        }
+        .xlb{
+            width: 15rem;
+            height:4rem;
+            margin:0 0.5rem;
+            padding-bottom:0.5rem;
+            border-bottom:0.05rem solid #e5e5e5;
+        }
+        .xlb li{
+            width: 4.65rem;
+            height:1.5rem;
+            float:left;
+            background:#fff;
+            margin-right:0.5rem;
+            margin-bottom:0.5rem;
+            text-align:center;
+            line-height:1.5rem;
+            color:#6a6a6a;
+            font-size:0.6rem;
+        }
+        .xlb li:nth-child(3){
+            margin-right:0;
+        }
+        .wz{
+            width: 15rem;
+            height: 3.9rem;
+            margin:0 0.5rem;
+            border-bottom:0.05rem solid #fff;
+            margin-bottom:1.3rem;
+        }
+        .wz p{
+            height: 1.85rem;
+            line-height:1.85rem;
+            font-size:0.7rem;
+            color:#727272;
+            padding-left:0.55rem;
+            border-top:0.05rem solid #fff;
+        }
+        .wz p span{
+            color:#eca026;
+            font-size:0.6rem;
+            margin-right:0.55rem;
+            float:right;
+        }
+        .fw{
+            width: 100%;
+            height:5.35rem;
+            margin-bottom:0.5rem;
+        }
+        .fw li{
+            width: 25%;
+            padding-top:3.3rem;
+            height:0.55rem;
+            float: left;
+            text-align:center;
+            font-size:0.55rem;
+            color:#6b6b6b;
+        }
+        .fw li:nth-child(1){
+            background:url("img/13.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .fw li:nth-child(2){
+            background:url("img/14.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .fw li:nth-child(3){
+            background:url("img/15.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .fw li:nth-child(4){
+            background:url("img/16.png") no-repeat 0.4rem top;
+            background-size: 3rem;
+        }
+        .txt2{
+
+            margin:0 0.5rem 0.25rem 0.5rem;
+            width: 14.9rem;
+            height: 1.9rem;
+            background:#b0b0b0 ;
+            border:0.05rem solid #b0b0b0;
+        }
+        .txt2 input{
+            float:left;
+            border:none;
+            width: 11.9rem;
+            height:1.9rem;
+        }
+        .txt2 a{
+            float:right;
+            background: url("img/4.png") no-repeat   center center;
+            width: 2.95rem;
+            height:1.9rem;
+            background-size:1.2rem;
+        }
+        .last{
+            width: 11.85rem;
+            height:3.25rem;
+            margin:0 auto;
+            padding-bottom:0.75rem;
+        }
+        .last li{
+            width: 3.95rem;
+            height:1.625rem;
+            line-height:1.625rem;
+            text-align:center;
+            font-size:0.7rem;
+            float:left;
+        }
+        footer{
+            width: 100%;
+        }
+        footer .wp{
+            width: 100%;
+            height:1.5rem;
+            background:#b0b0b0;
+            color:#fff;
+            line-height:1.5rem;
+            padding-left:0.55rem;
+            font-size:0.75rem;
+        }
+        footer .wp p{
+            float:left;
+            padding-left:0.55rem;
+        }
+        footer .wp span{
+            font-size:0.75rem;
+            float:left;
+            padding-left:1rem;
+        }
+        footer .wp a{
+            font-size:0.75rem;
+            color:#fff;
+            float:right;
+            width: 2.5rem;
+            padding-left:0.8rem;
+            height: 1.5em;
+            background:url("img/17.png") no-repeat left 0.35rem;
+            background-size: 0.525rem;
+        }
+        footer .lp{
+            height:2rem;
+            padding-left:0.5rem;
+            color:#cbcbcb;
+            font-size:0.6rem;
+            line-height: 2rem;
+        }
+    </style>
+    <script>
+        ;(function(win,doc){
+            doc.documentElement.style.fontSize = 20/320*doc.documentElement.clientWidth+'px';
+            win.addEventListener('resize',function(){
+                doc.documentElement.style.fontSize = 20/320*doc.documentElement.clientWidth+'px';
+            },false);
+        })(window,document);
+        ;
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <header></header>
+    <section>
+        <div class="banner"></div>
+        <div class="xz">
+            <img src="img/3.png"/>
+        </div>
+        <div class="txt">
+            <input type="text" />
+            <a href="javascript:;"></a>
+        </div>
+        <ul class="list">
+            <li>图书</li>
+            <li>服装</li>
+            <li>美妆</li>
+            <li>母婴</li>
+            <li>家居</li>
+            <li>图书</li>
+            <li>服装</li>
+            <li>美妆</li>
+            <li>母婴</li>
+            <li>家居</li>
+        </ul>
+        <ul class="sp">
+            <li>我的订单</li>
+            <li>我的优惠</li>
+            <li>口袋服务</li>
+            <li>浏览记录</li>
+        </ul>
+        <div class="jr">
+            <p>今日闪价</p>
+            <span>挑战全网最低价</span>
+            <a href="javascript:;"></a>
+        </div>
+        <div class="myl">
+            <div>
+                <img src="img/20.png"/>
+                <img src="img/9.png"/>
+            </div>
+            <p>桌面迷你小太阳取暖器<span>￥29.00</span></p>
+            <p>桌面迷你小太阳取暖器<span>￥69.00</span></p>
+        </div>
+        <div class="wp">
+            <p>尾品汇1-3折</p>
+            <span>名品清仓特卖</span>
+            <a href="javascript:;"></a>
+        </div>
+        <div class="pic">
+            <img src="img/10.png"/>
+            <img src="img/11.png"/>
+            <img src="img/12.png"/>
+        </div>
+        <ul class="xlb">
+            <li>男装</li>
+            <li>女装</li>
+            <li>鞋</li>
+            <li>户外</li>
+            <li>箱包</li>
+        </ul>
+        <div class="wz">
+            <p>桌面迷你小太阳取暖器<span>2.3折</span></p>
+            <p>桌面迷你小太阳取暖器<span>3.0折</span></p>
+        </div>
+        <ul class="fw">
+            <li>手机充值</li>
+            <li>元宝服务</li>
+            <li>当当客户端</li>
+            <li>读书客户端</li>
+        </ul>
+        <div class="txt2">
+            <input type="text" />
+            <a href="javascript:;"></a>
+        </div>
+        <ul class="last">
+            <li>精简版</li>
+            <li>触屏版</li>
+            <li>电脑版</li>
+            <li>建议</li>
+            <li>客户</li>
+            <li>帮助</li>
+        </ul>
+    </section>
+    <footer>
+        <div class="wp">
+            <p>登录</p>
+            <span>注册</span>
+            <a href="javascript:;">TOP</a>
+        </div>
+        <p class="lp">温馨提示：本信息仅供演示方便连接，与原网站无关</p>
+    </footer>
+</div>
+</body>
+</html>

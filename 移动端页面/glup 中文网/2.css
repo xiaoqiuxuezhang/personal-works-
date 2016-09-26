@@ -1,0 +1,11 @@
+.hide{
+    position: absolute;
+    left:20px;
+    line-height:32px;
+    display:none;
+}
+section dl{
+    float:left;
+    width:50%;
+    margin-bottom:30px;
+}

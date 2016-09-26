@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0; padding:0;list-style: none;}
+        body{background: #000;}
+        ul{
+            width: 150px;
+            height:200px;
+            margin: 300px auto;
+            position: relative;
+            -webkit-transform-style:preserve-3d;
+            -webkit-transform: perspective(800px) rotateY(0deg) rotateX(-20deg);
+            /*-webkit-transition:10s all ease;*/
+        }
+        ul li{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20%;
+            width: 100%;
+            height: 100%;
+            box-shadow:0 0 60px #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            -webkit-transform: rotateY(0deg) translateZ(0);
+        }
+        /*ul:active{*/
+            /*-webkit-transform:perspective(800px) rotateY(360deg) rotateX(180deg);*/
+        /*}*/
+        /*ul:hover{*/
+            /*-webkit-transform:perspective(800px) rotateX(90deg);*/
+        /*}*/
+        img{
+            width: 150px;
+            height:200px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oUl = document.querySelector('ul');
+            var aLi = oUl.children;
+
+            for(var i=0;i<aLi.length;i++){
+                aLi[i].style.WebkitTransition = '1s all ease '+(12-i)*100+'ms';
+
+
+                aLi[i].style.WebkitTransform = 'rotateY('+360/12*i+'deg) translateZ(350px)';
+            }
+
+//            var ry = 0;
+//            var rx = 0;
+//            oUl.onmousedown=function(ev){
+//                var disX = ev.pageX-oUl.offsetLeft;
+//                var disY = ev.pageY-oUl.offsetTop;
+//                document.onmousemove=function(ev){
+//                    ry = ev.pageX-disX;
+//                    rx = ev.pageY-disY;
+//                    oUl.style.WebkitTransform = 'perspective(800px) rotateY('+ry/10+'deg) rotateX('+-rx/10+'deg)';
+//                };
+//                document.onmouseup=function(){
+//                    document.onmousemove=null;
+//                    document.onmouseup=null;
+//                };
+//                return false;
+//            };
+            //拿数字模拟角度
+            var x = 0; 		//模拟x轴角度
+            var y = 0; 		//模拟y轴角度
+            var iSpeedX = 0;
+            var iSpeedY = 0;
+            var lastX = 0;
+            var lastY = 0;
+            oUl.onmousedown = function(ev){
+                clearInterval(oUl.timer);
+                //y轴
+                var disX = ev.pageX-y;
+                //x轴
+                var disY = ev.pageY-x;
+                document.onmousemove = function(ev){
+                    x = ev.pageY-disY;
+                    y = ev.pageX-disX;
+
+                    oUl.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+
+                    iSpeedX = ev.pageX-lastX;
+                    iSpeedY = ev.pageY-lastY;
+                    lastX = ev.pageX;
+                    lastY = ev.pageY;
+                };
+                document.onmouseup = function(){
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+
+                    oUl.timer = setInterval(function(){
+                        iSpeedX*=0.95;
+                        iSpeedY*=0.95;
+
+
+                        x+=iSpeedY;
+                        y+=iSpeedX;
+                        oUl.style.WebkitTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
+
+
+                        if(Math.abs(iSpeedX)<1)iSpeedX = 0;
+                        if(Math.abs(iSpeedY)<1)iSpeedY = 0;
+                        if(iSpeedX==0&&iSpeedY==0){
+                            clearInterval(oUl.timer);
+                        }
+                    },30);
+                };
+                return false;
+            };
+
+
+        };
+    </script>
+</head>
+<body>
+<ul>
+    <li><img src="1.jpg" alt=""/></li>
+    <li><img src="2.jpg" alt=""/></li>
+    <li><img src="3.jpg" alt=""/></li>
+    <li><img src="4.jpg" alt=""/></li>
+    <li><img src="5.jpg" alt=""/></li>
+    <li><img src="6.jpg" alt=""/></li>
+    <li><img src="7.jpg" alt=""/></li>
+    <li><img src="8.jpg" alt=""/></li>
+    <li><img src="9.jpg" alt=""/></li>
+    <li><img src="10.jpg" alt=""/></li>
+    <li><img src="11.jpg" alt=""/></li>
+    <li><img src="12.jpg" alt=""/></li>
+
+</ul>
+</body>
+</html>
